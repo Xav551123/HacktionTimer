@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: xtensa-lx106-elf-gcc.exe générer le fichier actif",
+			"command": "C:/Users/Xavier/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mlongcalls",
+				"-mtext-section-literals"
+			],
+			"options": {
+				"cwd": "C:/Users/Xavier/.platformio/packages/toolchain-xtensa/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compilateur : C:/Users/Xavier/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-gcc.exe"
+		}
+	]
+}
